@@ -1,0 +1,15 @@
+27577ed10ce14fe831ee9e01e1d9d3b5 *DESCRIPTION
+7ae8177ea53887f9b7b963de10ce5049 *NAMESPACE
+c1cafdf8f9aa0a7dcbc2c9937b355806 *R/RcppExports.R
+ad46624fa37d08e7bae16647b272637a *R/icrsf.r
+d788d4b7fb6b0b4e7ad764550f4249bb *R/simout.r
+0436f714975b665d9391eea4574731d1 *data/Xmat.rda
+00473e8753f92424f275f671446dbf5a *data/pheno.rda
+6af9273a46d4f68ae581caffdaea2eca *man/Xmat.Rd
+810ce8045c14599f42f41fa0216dcd07 *man/icRSF_1.0-package.Rd
+db36fa2d36c0ce08578b477fe1b8ee8a *man/icrsf.Rd
+eac0df4e0dc9135421bf7e115a441d60 *man/pheno.Rd
+1cef28267921615fdf4505093bb009cf *man/simout.Rd
+2eef2058506c01925c4bfcb6e90e4872 *src/RcppExports.cpp
+01bedd3106bdcea0192d98cc10991e00 *src/dataproc.cpp
+956c47a11acc366eb0dc655ca585139e *src/loglikhood2.cpp
