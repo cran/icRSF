@@ -80,3 +80,5 @@ simout <- function(Xmat, testtimes, sensitivity, specificity, noevent, betas, de
   return(pheno)
 }
 
+# pheno <- simout(Xmat, testtimes=1:4, sensitivity=1, specificity=1, noevent=0.7,
+#               betas=c(rep(0.81, 5), rep(0, ncol(Xmat)-5)), design="NMISS")

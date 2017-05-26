@@ -1,6 +1,6 @@
-\name{icRSF_1.0-package}
-\alias{icRSF_1.0-package}
-\alias{icRSF_1.0}
+\name{icRSF1.1-package}
+\alias{icRSF1.1-package}
+\alias{icRSF1.1}
 \docType{package}
 \title{
 Implements the icRSF algorithm to calculate variable importance
@@ -12,8 +12,8 @@ Implements a modification to the Random Survival Forests algorithm [1] for obtai
 \tabular{ll}{
 Package: \tab icRSF\cr
 Type: \tab Package\cr
-Version: \tab 1.0\cr
-Date: \tab 2016-01-01\cr
+Version: \tab 1.1\cr
+Date: \tab 2017-04-28\cr
 License: \tab GPL (>= 2)\cr
 }
 }
@@ -27,7 +27,7 @@ Maintainer: Hui Xu <huix@schoolph.umass.edu> and Raji Balasubramanian <rbalasub@
 
 [2] Gu, X., Ma, Y., Balasubramanian, R. (2015). Semi-parametric time to event models in the presence of error-prone, self-reported outcomes - with application to the Women's Health Initiative, Annals of Applied Statistics, 9 (2), 714-730. <DOI: 10.1214/15-AOAS810>
 
-[3] Xu, H., Gu, X., Tadesse, M. G., Balasubramanian, R. (2016). A modified Random Survival Forests algorithm for variable selection in the presence of imperfect self-reports or laboratory based diagnostic tests, Submitted to Journal of Computational and Graphical Statistics. 
+[3] Xu, H., Gu, X., Tadesse, M. G., Balasubramanian, R. (2016). A modified Random Survival Forests algorithm for variable selection in the presence of imperfect self-reports or laboratory based diagnostic tests, Submitted to Journal of Computational and Graphical Statistics.
 
 
 }

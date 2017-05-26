@@ -169,7 +169,7 @@ NumericVector gradlikC0(NumericVector parm, NumericMatrix Dmat) {
 NumericVector splitpointC(NumericMatrix Dm, NumericVector x, Function f) {
   int J = Dm.ncol() - 1;
   NumericVector ux = unique(x).sort(), chisq(J+2), chisqtemp(J+3, -1.0);
-  int nux = ux.size(), id = -1;
+  int nux = ux.size();
   for (int i=0; i <= nux-2; i++) {
     chisq = f(Dm, x >= (ux[i]+ux[i+1])/2);
     if (chisq[0] >= chisqtemp[1]) {
@@ -288,7 +288,7 @@ double scorefun0(NumericVector x, NumericVector parm, NumericMatrix Dmat) {
 
 // [[Rcpp::export]]
 NumericVector splitpt(NumericMatrix Dmat, NumericVector x, NumericVector parm) {
-  int J = Dmat.ncol() - 1, nsub = Dmat.nrow(), j;
+  int nsub = Dmat.nrow(), j;
   NumericVector ux = unique(x).sort(), result(2, -1.0), xtemp(nsub);
   double chisq;
   int nux = ux.size();
@@ -311,7 +311,7 @@ NumericVector splitpt(NumericMatrix Dmat, NumericVector x, NumericVector parm) {
 
 // [[Rcpp::export]]
 List bsplitC(NumericMatrix Dmat, NumericMatrix Xmat, NumericVector parm) {
-  int J = Dmat.ncol() - 1, nsub = Dmat.nrow(), nbeta = Xmat.ncol(), id = -1, j;
+  int nsub = Dmat.nrow(), nbeta = Xmat.ncol(), id = -1;
   NumericVector result(2, -9999999999), temp(2), xtemp(nsub);
   for (int i=0; i < nbeta; i++) {
     xtemp = Xmat(_, i);

@@ -44,4 +44,3 @@ data(Xmat)
 sim <- simout(Xmat, testtimes=1:4, sensitivity=1, specificity=1, noevent=0.7, 
               betas=c(rep(0.81, 5), rep(0, ncol(Xmat)-5)), design="NTFP")
 }
-
