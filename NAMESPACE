@@ -2,6 +2,7 @@
 
 export(icrsf)
 export(simout)
+export(treebuilder)
 import(icensmis)
 import(parallel)
 importFrom(Rcpp,evalCpp)

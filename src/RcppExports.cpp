@@ -7,7 +7,7 @@ using namespace Rcpp;
 
 // dmat
 NumericMatrix dmat(NumericVector id, NumericVector time, IntegerVector result, double phi1, double phi0, double negpred);
-RcppExport SEXP icRSF_dmat(SEXP idSEXP, SEXP timeSEXP, SEXP resultSEXP, SEXP phi1SEXP, SEXP phi0SEXP, SEXP negpredSEXP) {
+RcppExport SEXP _icRSF_dmat(SEXP idSEXP, SEXP timeSEXP, SEXP resultSEXP, SEXP phi1SEXP, SEXP phi0SEXP, SEXP negpredSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -23,7 +23,7 @@ END_RCPP
 }
 // getrids
 IntegerVector getrids(NumericVector id, int nsub);
-RcppExport SEXP icRSF_getrids(SEXP idSEXP, SEXP nsubSEXP) {
+RcppExport SEXP _icRSF_getrids(SEXP idSEXP, SEXP nsubSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -35,7 +35,7 @@ END_RCPP
 }
 // timeMat
 NumericMatrix timeMat(int nsub, int J, NumericVector time, NumericVector utime, NumericMatrix Xmat);
-RcppExport SEXP icRSF_timeMat(SEXP nsubSEXP, SEXP JSEXP, SEXP timeSEXP, SEXP utimeSEXP, SEXP XmatSEXP) {
+RcppExport SEXP _icRSF_timeMat(SEXP nsubSEXP, SEXP JSEXP, SEXP timeSEXP, SEXP utimeSEXP, SEXP XmatSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -50,7 +50,7 @@ END_RCPP
 }
 // loglikC
 double loglikC(NumericVector parm, NumericMatrix Dmat, NumericVector x);
-RcppExport SEXP icRSF_loglikC(SEXP parmSEXP, SEXP DmatSEXP, SEXP xSEXP) {
+RcppExport SEXP _icRSF_loglikC(SEXP parmSEXP, SEXP DmatSEXP, SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -63,7 +63,7 @@ END_RCPP
 }
 // gradlikC
 NumericVector gradlikC(NumericVector parm, NumericMatrix Dmat, NumericVector x);
-RcppExport SEXP icRSF_gradlikC(SEXP parmSEXP, SEXP DmatSEXP, SEXP xSEXP) {
+RcppExport SEXP _icRSF_gradlikC(SEXP parmSEXP, SEXP DmatSEXP, SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -76,7 +76,7 @@ END_RCPP
 }
 // loglikCD
 double loglikCD(NumericVector parm, NumericMatrix Dmat, NumericVector x);
-RcppExport SEXP icRSF_loglikCD(SEXP parmSEXP, SEXP DmatSEXP, SEXP xSEXP) {
+RcppExport SEXP _icRSF_loglikCD(SEXP parmSEXP, SEXP DmatSEXP, SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -89,7 +89,7 @@ END_RCPP
 }
 // gradlikCD
 NumericVector gradlikCD(NumericVector parm, NumericMatrix Dmat, NumericVector x);
-RcppExport SEXP icRSF_gradlikCD(SEXP parmSEXP, SEXP DmatSEXP, SEXP xSEXP) {
+RcppExport SEXP _icRSF_gradlikCD(SEXP parmSEXP, SEXP DmatSEXP, SEXP xSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -102,7 +102,7 @@ END_RCPP
 }
 // loglikCD0
 double loglikCD0(NumericVector parm, NumericMatrix Dmat);
-RcppExport SEXP icRSF_loglikCD0(SEXP parmSEXP, SEXP DmatSEXP) {
+RcppExport SEXP _icRSF_loglikCD0(SEXP parmSEXP, SEXP DmatSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -114,7 +114,7 @@ END_RCPP
 }
 // loglikC0
 double loglikC0(NumericVector parm, NumericMatrix Dmat);
-RcppExport SEXP icRSF_loglikC0(SEXP parmSEXP, SEXP DmatSEXP) {
+RcppExport SEXP _icRSF_loglikC0(SEXP parmSEXP, SEXP DmatSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -126,7 +126,7 @@ END_RCPP
 }
 // gradlikCD0
 NumericVector gradlikCD0(NumericVector parm, NumericMatrix Dmat);
-RcppExport SEXP icRSF_gradlikCD0(SEXP parmSEXP, SEXP DmatSEXP) {
+RcppExport SEXP _icRSF_gradlikCD0(SEXP parmSEXP, SEXP DmatSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -138,7 +138,7 @@ END_RCPP
 }
 // gradlikC0
 NumericVector gradlikC0(NumericVector parm, NumericMatrix Dmat);
-RcppExport SEXP icRSF_gradlikC0(SEXP parmSEXP, SEXP DmatSEXP) {
+RcppExport SEXP _icRSF_gradlikC0(SEXP parmSEXP, SEXP DmatSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -150,7 +150,7 @@ END_RCPP
 }
 // splitpointC
 NumericVector splitpointC(NumericMatrix Dm, NumericVector x, Function f);
-RcppExport SEXP icRSF_splitpointC(SEXP DmSEXP, SEXP xSEXP, SEXP fSEXP) {
+RcppExport SEXP _icRSF_splitpointC(SEXP DmSEXP, SEXP xSEXP, SEXP fSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -163,7 +163,7 @@ END_RCPP
 }
 // splitpointCD
 NumericVector splitpointCD(NumericMatrix Dm, NumericVector x, Function f);
-RcppExport SEXP icRSF_splitpointCD(SEXP DmSEXP, SEXP xSEXP, SEXP fSEXP) {
+RcppExport SEXP _icRSF_splitpointCD(SEXP DmSEXP, SEXP xSEXP, SEXP fSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -176,7 +176,7 @@ END_RCPP
 }
 // bestsplitC
 List bestsplitC(NumericMatrix Dm, NumericMatrix Xmat, Function f);
-RcppExport SEXP icRSF_bestsplitC(SEXP DmSEXP, SEXP XmatSEXP, SEXP fSEXP) {
+RcppExport SEXP _icRSF_bestsplitC(SEXP DmSEXP, SEXP XmatSEXP, SEXP fSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -189,7 +189,7 @@ END_RCPP
 }
 // bestsplitCD
 List bestsplitCD(NumericMatrix Dm, NumericMatrix Xmat, Function f);
-RcppExport SEXP icRSF_bestsplitCD(SEXP DmSEXP, SEXP XmatSEXP, SEXP fSEXP) {
+RcppExport SEXP _icRSF_bestsplitCD(SEXP DmSEXP, SEXP XmatSEXP, SEXP fSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -202,7 +202,7 @@ END_RCPP
 }
 // scorefun
 double scorefun(double beta, NumericVector x, NumericVector parm, NumericMatrix Dmat);
-RcppExport SEXP icRSF_scorefun(SEXP betaSEXP, SEXP xSEXP, SEXP parmSEXP, SEXP DmatSEXP) {
+RcppExport SEXP _icRSF_scorefun(SEXP betaSEXP, SEXP xSEXP, SEXP parmSEXP, SEXP DmatSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -216,7 +216,7 @@ END_RCPP
 }
 // scorefun0
 double scorefun0(NumericVector x, NumericVector parm, NumericMatrix Dmat);
-RcppExport SEXP icRSF_scorefun0(SEXP xSEXP, SEXP parmSEXP, SEXP DmatSEXP) {
+RcppExport SEXP _icRSF_scorefun0(SEXP xSEXP, SEXP parmSEXP, SEXP DmatSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -229,7 +229,7 @@ END_RCPP
 }
 // splitpt
 NumericVector splitpt(NumericMatrix Dmat, NumericVector x, NumericVector parm);
-RcppExport SEXP icRSF_splitpt(SEXP DmatSEXP, SEXP xSEXP, SEXP parmSEXP) {
+RcppExport SEXP _icRSF_splitpt(SEXP DmatSEXP, SEXP xSEXP, SEXP parmSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -242,7 +242,7 @@ END_RCPP
 }
 // bsplitC
 List bsplitC(NumericMatrix Dmat, NumericMatrix Xmat, NumericVector parm);
-RcppExport SEXP icRSF_bsplitC(SEXP DmatSEXP, SEXP XmatSEXP, SEXP parmSEXP) {
+RcppExport SEXP _icRSF_bsplitC(SEXP DmatSEXP, SEXP XmatSEXP, SEXP parmSEXP) {
 BEGIN_RCPP
     Rcpp::RObject rcpp_result_gen;
     Rcpp::RNGScope rcpp_rngScope_gen;
@@ -252,4 +252,32 @@ BEGIN_RCPP
     rcpp_result_gen = Rcpp::wrap(bsplitC(Dmat, Xmat, parm));
     return rcpp_result_gen;
 END_RCPP
+}
+
+static const R_CallMethodDef CallEntries[] = {
+    {"_icRSF_dmat", (DL_FUNC) &_icRSF_dmat, 6},
+    {"_icRSF_getrids", (DL_FUNC) &_icRSF_getrids, 2},
+    {"_icRSF_timeMat", (DL_FUNC) &_icRSF_timeMat, 5},
+    {"_icRSF_loglikC", (DL_FUNC) &_icRSF_loglikC, 3},
+    {"_icRSF_gradlikC", (DL_FUNC) &_icRSF_gradlikC, 3},
+    {"_icRSF_loglikCD", (DL_FUNC) &_icRSF_loglikCD, 3},
+    {"_icRSF_gradlikCD", (DL_FUNC) &_icRSF_gradlikCD, 3},
+    {"_icRSF_loglikCD0", (DL_FUNC) &_icRSF_loglikCD0, 2},
+    {"_icRSF_loglikC0", (DL_FUNC) &_icRSF_loglikC0, 2},
+    {"_icRSF_gradlikCD0", (DL_FUNC) &_icRSF_gradlikCD0, 2},
+    {"_icRSF_gradlikC0", (DL_FUNC) &_icRSF_gradlikC0, 2},
+    {"_icRSF_splitpointC", (DL_FUNC) &_icRSF_splitpointC, 3},
+    {"_icRSF_splitpointCD", (DL_FUNC) &_icRSF_splitpointCD, 3},
+    {"_icRSF_bestsplitC", (DL_FUNC) &_icRSF_bestsplitC, 3},
+    {"_icRSF_bestsplitCD", (DL_FUNC) &_icRSF_bestsplitCD, 3},
+    {"_icRSF_scorefun", (DL_FUNC) &_icRSF_scorefun, 4},
+    {"_icRSF_scorefun0", (DL_FUNC) &_icRSF_scorefun0, 3},
+    {"_icRSF_splitpt", (DL_FUNC) &_icRSF_splitpt, 3},
+    {"_icRSF_bsplitC", (DL_FUNC) &_icRSF_bsplitC, 3},
+    {NULL, NULL, 0}
+};
+
+RcppExport void R_init_icRSF(DllInfo *dll) {
+    R_registerRoutines(dll, NULL, CallEntries, NULL, NULL);
+    R_useDynamicSymbols(dll, FALSE);
 }

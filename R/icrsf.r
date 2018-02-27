@@ -13,8 +13,8 @@
 #' @param testtimes vector of visit or test times of length N**x1.
 #' @param result vector of binary diagnostic test results (0 = negative for event of interest; 1 = positive
 #'        for event of interest) of length N**x1.
-#' @param sensitivity the sensitivity of the diagnostic test
-#' @param specificity the specificity of the diagnostic test
+#' @param sensitivity the sensitivity of the diagnostic test.
+#' @param specificity the specificity of the diagnostic test.
 #' @param Xmat a N x P matrix of covariates.
 #' @param root.size minimum number of subjects in a terminal node.
 #' @param ntree number of survival trees.
@@ -29,7 +29,7 @@
 #' data(Xmat)
 #' data(pheno)
 #' vimp <- icrsf(data=pheno, subject=ID, testtimes=time, result=result, sensitivity=1,
-#'              specificity=1, Xmat=Xmat, root.size=30, ntree=1, ns=sqrt(ncol(Xmat)), node=1, pval=)
+#'              specificity=1, Xmat=Xmat, root.size=30, ntree=1, ns=sqrt(ncol(Xmat)), node=1, pval=1)
 #'
 #' @useDynLib icRSF
 #' @importFrom Rcpp evalCpp
